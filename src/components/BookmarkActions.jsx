@@ -41,8 +41,10 @@ const BookmarkActions = ({ bookmarks, onImport }) => {
                 <input
                     type="file"
                     accept=".txt"
+                    value=""
                     className="hidden"
                     onChange={handleImport}
+                    onClick={(e) => (e.target.value = "")}
                 />
             </Button>
         </div>
