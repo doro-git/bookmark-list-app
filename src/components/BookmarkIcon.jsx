@@ -2,8 +2,8 @@ import { extractDomain, getFaviconUrl } from "../utils/bookmarkUtils";
 
 const BookmarkIcon = ({ url, onDelete }) => {
     const domain = extractDomain(url);
-    const faviconUrl = getFaviconUrl(url);
-    // const faviconUrl = "";
+    // const faviconUrl = getFaviconUrl(url);
+    const faviconUrl = "";
 
     const handleClick = () => {
         window.open(url, "_blank");
